@@ -18,6 +18,5 @@ def qr_info():
 
 
 failinimi = sys.argv[1]
-# failinimi = 'ticket.pdf'
 pdfToJpeg(failinimi)
 qr_info()
