@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D4E2E2"
+    android:background="#7AC5E0E0"
     tools:context=".MainActivity">
 
     <View
@@ -24,35 +24,49 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:fontFamily="@font/amiko"
-        android:text="Tickets"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Seamless Tickets"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-light"
+        android:text="UPCOMING EVENTS"
+        android:textColor="#797878"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/ticket_constraint_layout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="279dp"
         android:layout_marginTop="36dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view">
 
         <View
             android:id="@+id/ticket_view"
-            android:layout_width="388dp"
+            android:layout_width="402dp"
             android:layout_height="91dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@android:drawable/spinner_dropdown_background"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:drawable/editbox_background"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,44 +74,97 @@
             android:id="@+id/textView2"
             android:layout_width="209dp"
             android:layout_height="42dp"
-            android:layout_marginEnd="36dp"
-            android:fontFamily="@font/amiko_bold"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="sans-serif-medium"
             android:text="Metallica 2020"
-            android:textAlignment="center"
-            android:textSize="24dp"
+            android:textAlignment="textStart"
+            android:textColor="#353535"
+            android:textSize="21sp"
             app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
             app:layout_constraintEnd_toEndOf="@+id/ticket_view"
-            app:layout_constraintTop_toTopOf="@+id/ticket_view" />
+            app:layout_constraintTop_toTopOf="@+id/ticket_view"
+            app:layout_constraintVertical_bias="0.673" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/amiko"
             android:text="JUNE 14"
+            android:textColor="#353535"
             app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
             app:layout_constraintStart_toStartOf="@+id/ticket_view"
             app:layout_constraintTop_toTopOf="@+id/ticket_view"
+            app:layout_constraintVertical_bias="0.305"
             app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/amiko"
+            android:text="FRI 19:00"
+            android:textColor="#A5A5A5"
+            app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
+            app:layout_constraintStart_toStartOf="@+id/ticket_view"
+            app:layout_constraintTop_toTopOf="@+id/ticket_view"
+            app:layout_constraintVertical_bias="0.655"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <View
+            android:id="@+id/joon"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="13dp"
+            android:background="#A5A5A5"
+            app:layout_constraintBottom_toBottomOf="@id/ticket_view"
+            app:layout_constraintEnd_toEndOf="@id/ticket_view"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="@id/ticket_view"
+            app:layout_constraintTop_toTopOf="@id/ticket_view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="371dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="22dp"
+            android:background="#00178301"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wifi_tethering_black_24dp"
+            tools:srcCompat="@drawable/ic_wifi_tethering_black_24dp" />
+
     </android.support.constraint.ConstraintLayout>
 
     <ImageView
         android:id="@+id/addTicket"
         android:layout_width="79dp"
         android:layout_height="69dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_add_circle_outline_24px" />
+        app:srcCompat="@drawable/ic_add_48px" />
 
     <TextView
         android:id="@+id/text_add_new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Press the 'plus' icon to add a new ticket"
+        android:text="Press the 'plus' icon to add a new ticket."
+        android:textSize="18sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

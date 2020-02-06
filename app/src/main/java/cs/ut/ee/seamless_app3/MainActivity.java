@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == -1) {
                 findViewById(R.id.ticket_constraint_layout).setVisibility(View.VISIBLE);
                 findViewById(R.id.text_add_new).setVisibility(View.INVISIBLE);
+                findViewById(R.id.textView7).setVisibility(View.VISIBLE);
             }
         }
     }
