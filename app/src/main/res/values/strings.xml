@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Seamless_App3</string>
+    <string name="servicedesc">Seamless entrance service</string>
+    <string name="aiddescription">AID for seamless entrance</string>
 </resources>
