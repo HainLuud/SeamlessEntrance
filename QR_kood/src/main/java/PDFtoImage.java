@@ -29,8 +29,8 @@ public class PDFtoImage {
         
         //Writing the image to a file
         ImageIO.write(image, "JPEG", new File("pdfpilt.jpg"));
-        
-        System.out.println("Image created");
+
+//        System.out.println("Image created");
         
         //Closing the document
         document.close();
