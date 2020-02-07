@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.net.URI;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.ticket_constraint_layout).setVisibility(View.VISIBLE);
                 findViewById(R.id.text_add_new).setVisibility(View.INVISIBLE);
                 findViewById(R.id.textView7).setVisibility(View.VISIBLE);
+                Toast.makeText(this, "Your ticket has been added! Just go to the ticket gate and tap your phone on the scanner", Toast.LENGTH_LONG).show();
             }
         }
     }
