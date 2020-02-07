@@ -60,10 +60,10 @@
 
         <View
             android:id="@+id/ticket_view"
-            android:layout_width="402dp"
+            android:layout_width="match_parent"
             android:layout_height="91dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             android:background="@android:drawable/editbox_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -72,18 +72,22 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="209dp"
+            android:layout_width="0dp"
             android:layout_height="42dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="90dp"
             android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:text="Metallica 2020"
             android:textAlignment="textStart"
             android:textColor="#353535"
             android:textSize="21sp"
             app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
             app:layout_constraintEnd_toEndOf="@+id/ticket_view"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/joon"
             app:layout_constraintTop_toTopOf="@+id/ticket_view"
-            app:layout_constraintVertical_bias="0.673" />
+            app:layout_constraintVertical_bias="0.48000002" />
 
         <TextView
             android:id="@+id/textView3"
@@ -105,29 +109,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="2dp"
             android:fontFamily="@font/amiko"
             android:text="FRI 19:00"
             android:textColor="#A5A5A5"
             app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
             app:layout_constraintStart_toStartOf="@+id/ticket_view"
-            app:layout_constraintTop_toTopOf="@+id/ticket_view"
-            app:layout_constraintVertical_bias="0.655"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <View
             android:id="@+id/joon"
             android:layout_width="1dp"
             android:layout_height="50dp"
-            android:layout_marginStart="96dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="280dp"
             android:layout_marginBottom="13dp"
             android:background="#A5A5A5"
             app:layout_constraintBottom_toBottomOf="@id/ticket_view"
-            app:layout_constraintEnd_toEndOf="@id/ticket_view"
-            app:layout_constraintHorizontal_bias="0.111"
-            app:layout_constraintStart_toStartOf="@id/ticket_view"
+            app:layout_constraintEnd_toEndOf="@+id/ticket_view"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="@id/ticket_view"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -135,13 +136,15 @@
             android:id="@+id/broadcast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="371dp"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="22dp"
             android:background="#00178301"
+            app:layout_constraintBottom_toBottomOf="@+id/ticket_view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_wifi_tethering_black_24dp"
             tools:srcCompat="@drawable/ic_wifi_tethering_black_24dp" />
 

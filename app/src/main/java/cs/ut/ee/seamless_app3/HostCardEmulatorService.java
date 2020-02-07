@@ -12,7 +12,7 @@ public class HostCardEmulatorService extends HostApduService {
 
     @Override
     public byte[] processCommandApdu(byte[] apdu, Bundle extras) {
-        final String STATUS_SUCCESS = "9000";
+        final String STATUS_SUCCESS = "72201807720693";
         final String STATUS_FAILED = "6F00";
         final String CLA_NOT_SUPPORTED = "6E00";
         final String INS_NOT_SUPPORTED = "6D00";

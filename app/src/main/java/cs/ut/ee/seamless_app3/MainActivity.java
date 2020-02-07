@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.text_add_new).setVisibility(View.INVISIBLE);
                 findViewById(R.id.textView7).setVisibility(View.VISIBLE);
                 for (int i = 0; i < 3; i++) {
-                    Toast.makeText(this, "Your ticket has been added! Just go to the event and swipe your phone on the scanner.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Your ticket has been added! Just go to the event and swipe your phone on the scanner.", Toast.LENGTH_LONG).show();
                 }
             }
         }
