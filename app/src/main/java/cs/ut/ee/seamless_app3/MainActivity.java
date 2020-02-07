@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.ticket_constraint_layout).setVisibility(View.VISIBLE);
                 findViewById(R.id.text_add_new).setVisibility(View.INVISIBLE);
                 findViewById(R.id.textView7).setVisibility(View.VISIBLE);
-                Toast.makeText(this, "Your ticket has been added! Just go to the ticket gate and tap your phone on the scanner", Toast.LENGTH_LONG).show();
+                for (int i = 0; i < 3; i++) {
+                    Toast.makeText(this, "Your ticket has been added! Just go to the event and swipe your phone on the scanner.", Toast.LENGTH_SHORT).show();
+                }
             }
         }
     }
